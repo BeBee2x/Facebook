@@ -121,8 +121,8 @@
             </div>
             <div class="col-3">
                 <div class="ps-5" id="notiDiv">
-                    <a href="{{ route('messenger-home') }}" onclick="location.reload()" class="btn rounded-circle btn-lg ms-5" style="background-color: #F0F2F5;padding:9px 15px"><i
-                            class="fa-brands fa-facebook-messenger"></i></a>
+                    <button class="btn rounded-circle btn-lg ms-5 invisible" style="background-color: #F0F2F5;padding:9px 15px"><i
+                            class="fa-brands fa-facebook-messenger"></i></button>
                     <button class="btn rounded-circle btn-lg notiBtn" data-bs-toggle="offcanvas" href="#offcanvasExample"
                         style="background-color: #F0F2F5"><i class="fa-solid fa-bell" style="position: relative"></i>
                         <div class="d-none">

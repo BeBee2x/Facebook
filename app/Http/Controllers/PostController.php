@@ -32,8 +32,8 @@ class PostController extends Controller
     public function home(){
         $expiredStory = Story::where('expired_date','<=',now())->get();
         foreach($expiredStory as $exSty){
-            Story::where('story_id',$exSty)->delete();
-            Notification::where('story_id',$exSty)->delete();
+            Story::where('id',$exSty->id)->delete();
+            Notification::where('story_id',$exSty->id)->delete();
         }
         $stories = Story::select('stories.*','users.name as user_name','users.image as user_image')
         ->leftJoin('users','stories.user_id','users.id')
